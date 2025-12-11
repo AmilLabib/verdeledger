@@ -1,6 +1,6 @@
 export default function CarbonMarketplace() {
   return (
-    <div className="p-6 min-h-screen">
+    <div className="min-h-screen">
       <header className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-6">
         <div>
           <h1 className="text-3xl font-extrabold text-primary">Carbon Credit Marketplace Integration</h1>

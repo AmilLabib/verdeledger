@@ -8,8 +8,8 @@ export default function Certification() {
   const [selectedCert, setSelectedCert] = useState<Cert | null>(null)
 
   return (
-    <div className="p-6">
-      <h1 className="text-4xl font-extrabold text-primary mb-4">Certification Module</h1>
+    <div className="min-h-screen">
+      <h1 className="text-4xl font-extrabold text-primary mb-1">Certification Module</h1>
       <p className="text-sm text-gray-600 mb-6">Sustainability Certifications for Your Enterprise</p>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">

@@ -1,7 +1,8 @@
 export default function CarbonModule() {
   return (
-    <div className="p-6">
-      <h1 className="text-4xl font-extrabold text-primary mb-6">Carbon Module</h1>
+    <div className="min-h-screen">
+      <h1 className="text-4xl font-extrabold text-primary mb-1">Carbon Module</h1>
+  <p className="text-sm text-gray-600 mb-6">This module helps companies measure Scope 1-3 emissions, calculate carbon footprints, and analyze opportunities to reduce emissions and convert environmental impact into business value.</p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
         <div className="bg-white rounded-2xl p-6 shadow-md flex flex-col justify-between">

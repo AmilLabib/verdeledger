@@ -29,10 +29,12 @@ export default function Dashboard() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-bg p-6">
-      <header className="flex items-center gap-4 mb-6">
-        <h1 className="text-4xl font-extrabold text-primary">Financial Reporting</h1>
+    <div className="min-h-screen bg-bg">
+      <header className="flex items-center gap-4">
+        <h1 className="text-4xl font-extrabold text-primary mb-1">Financial Reporting</h1>
       </header>
+
+  <p className="text-sm text-gray-600 mb-6">This page provides a concise overview of financial performance, key metrics, and reports to help companies monitor revenue, cash flow, and profitability at a glance.</p>
 
       <main className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div className="bg-white rounded-2xl p-6 shadow-md">

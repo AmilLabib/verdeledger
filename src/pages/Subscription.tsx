@@ -1,8 +1,9 @@
 export default function Subscription() {
   return (
-    <div className="p-6 min-h-screen bg-bg">
+    <div className="min-h-screen bg-bg">
       <div className="max-w-5xl mx-auto">
-        <h1 className="text-2xl font-bold text-text mb-6">Paket Berlangganan</h1>
+<h1 className="text-4xl font-extrabold text-primary">Subscription Packages</h1>
+  <p className="text-sm text-gray-600 mb-6">Choose a subscription package that suits your company's conditions and objectives.  </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Growing Company Card */}

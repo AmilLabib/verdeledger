@@ -18,10 +18,10 @@ const chartData = [
 
 export default function Dashboard() {
   return (
-    <div className="min-h-screen p-6">
+    <div className="min-h-screen">
       <header className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
         <div>
-          <h1 className="text-3xl sm:text-4xl font-extrabold text-primary">Dasbhboard</h1>
+          <h1 className="text-3xl sm:text-4xl font-extrabold text-primary mb-1">Dasbhboard</h1>
           <p className="text-sm text-gray-500">Analytics Dashboard</p>
         </div>
         <div className="flex items-center gap-3">

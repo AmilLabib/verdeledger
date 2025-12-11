@@ -5,9 +5,13 @@ import MainLayout from './layouts/MainLayout'
 import Financial from './pages/Financial'
 import CarbonModule from './pages/CarbonModule'
 import Certification from './pages/Certification'
+import InstructionsModal from './components/InstructionsModal'
+import CarbonMarketplace from './pages/CarbonMarketplace'
+import Subscription from './pages/Subscription'
 
 function LoginScreen() {
   const [passwordShown, setPasswordShown] = useState(false)
+  const [showInstructions, setShowInstructions] = useState(true)
   const navigate = useNavigate()
 
   function handleSubmit(e: React.FormEvent) {
@@ -17,6 +21,7 @@ function LoginScreen() {
 
   return (
     <div className="min-h-screen flex items-center justify-center relative overflow-hidden p-6 bg-bg">
+      <InstructionsModal visible={showInstructions} onClose={() => setShowInstructions(false)} />
       <div className="w-full max-w-md flex flex-col items-center gap-6">
         <div className="flex flex-col items-center gap-2">
           <img src="/logo.png" alt="VerdeLedger logo" className="w-36" />
@@ -57,6 +62,8 @@ export default function App() {
         <Route path="/financial" element={<Financial />} />
         <Route path="/carbon-modul" element={<CarbonModule />} />
         <Route path="/certification" element={<Certification />} />
+        <Route path="/market" element={<CarbonMarketplace />} />
+  <Route path="/subscription" element={<Subscription />} />
       </Route>
     </Routes>
   )

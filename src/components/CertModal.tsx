@@ -1,4 +1,5 @@
 import type { Cert } from '../data/certifications'
+import { useNavigate } from 'react-router-dom'
 
 type Props = {
   cert: Cert | null
@@ -6,6 +7,7 @@ type Props = {
 }
 
 export default function CertModal({ cert, onClose }: Props) {
+  const navigate = useNavigate()
   if (!cert) return null
 
   return (
@@ -42,7 +44,16 @@ export default function CertModal({ cert, onClose }: Props) {
             </div>
 
             <div className="mt-6 flex justify-end">
-              <button onClick={onClose} className="bg-primary text-white px-4 py-2 rounded">Close</button>
+              <button
+                onClick={() => {
+                  onClose()
+                  navigate('/subscription')
+                }}
+                className="bg-primary text-white px-4 py-2 rounded flex items-center gap-2"
+              >
+                Get with VerdeLedger
+                <img src="/logo-white.png" alt="verdeledger" className="h-4" />
+              </button>
             </div>
           </div>
         </div>

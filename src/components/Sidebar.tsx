@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom'
 import { useState } from 'react'
-import { Home, BarChart2, Leaf, Award, Menu, X } from 'lucide-react'
+import { Home, BarChart2, Leaf, Award, Menu, X, ShoppingBag, Banknote } from 'lucide-react'
+
 
 type Props = {
   mobileOpen?: boolean
@@ -59,6 +60,8 @@ export default function Sidebar({ mobileOpen = false, onClose }: Props) {
           {item('Financial Reporting', '/financial', BarChart2)}
           {item('Carbon Module', '/carbon-modul', Leaf)}
           {item('Certification', '/certification', Award)}
+          {item('Carbon Market', '/market', ShoppingBag)}
+          {item('Subscription', '/subscription', Banknote)}
         </nav>
       </aside>
 
